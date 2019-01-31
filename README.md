@@ -2,6 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
+
+# Playing at Heroku
+After idle for a while, Heroku falls asleep and internal memory is reseted.
+- https://peaceful-harbor-60081.herokuapp.com
+
+# Heroku tips
+heroku create
+
+heroku git:remote -a your_app_name_just_created
+
+git push heroku master
+
+heroku open
+
+heroku logs
+
+
+# Playing Localy
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
