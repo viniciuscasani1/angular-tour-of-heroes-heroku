@@ -18,6 +18,8 @@ heroku open
 
 heroku logs
 
+> More Angular-Heroku configuration [here](https://medium.com/@shubhsharma10/how-to-deploy-angular-6-app-to-heroku-52b73ac7a3aa).
+
 
 # Playing Localy
 
