@@ -1,0 +1,31 @@
+<div class="container">
+  <mat-card *ngFor="let item of dados;">
+    <mat-card-title>Tweet {{item.idTweet}}</mat-card-title>
+
+    <form [formGroup]="formGroup" class="form">
+      <label>{{item.tweet}}</label>
+
+      <br>
+
+      <mat-slide-toggle class="seg" [checked]="item.comportamental" (change)="item.comportamental = $event.checked"
+        color="primary">
+        Comportamental
+      </mat-slide-toggle>
+
+      <mat-slide-toggle class="seg" [checked]="item.psiquico" (change)="item.psiquico = $event.checked"
+        color="primary">
+        Psiquico
+      </mat-slide-toggle>
+
+      <mat-slide-toggle class="seg" [checked]="item.fisiologico" (change)="item.fisiologico = $event.checked"
+        color="primary">
+        Fisiologico
+      </mat-slide-toggle>
+    </form>
+  </mat-card>
+</div>
+
+
+<button mat-fab (click)="onSubmit()" color="primary">
+  <mat-icon>check</mat-icon>
+</button>

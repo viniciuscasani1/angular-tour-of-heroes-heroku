@@ -3,13 +3,20 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { DatasetComponent } from './pages/dataset/dataset.component';
+import { CategorizarComponent } from './pages/categorizar/categorizar.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'heroes', component: HeroesComponent },
-  { path: 'detail/:id', component: HeroDetailComponent },
-  { path: 'dashboard', component: DashboardComponent }
+  {
+    path: "dataset",
+    component: DatasetComponent
+  }, {
+    path: "categorizar",
+    component: CategorizarComponent,
+    pathMatch: 'full'
+  },
+  { path: "", redirectTo: "/dataset", pathMatch: "full" }
 ];
 
 @NgModule({
