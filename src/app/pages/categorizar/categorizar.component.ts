@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-// import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material';
 import { DadosService } from 'src/app/services/dados.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -17,7 +17,7 @@ export class CategorizarComponent implements OnInit {
 
   constructor(
     private service: DadosService,
-    // private snackBar: MatSnackBar
+    private snackBar: MatSnackBar
   ) { }
 
   ngOnInit() {
@@ -33,9 +33,9 @@ export class CategorizarComponent implements OnInit {
   }
 
   showMessage(message: string) {
-    // this.snackBar.open(message, "Ok", {
-    //   duration: 3000
-    // });
+    this.snackBar.open(message, "Ok", {
+      duration: 3000
+    });
   }
 
   onSubmit() {
