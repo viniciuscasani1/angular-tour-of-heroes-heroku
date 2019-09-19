@@ -17,6 +17,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { DadosService } from './services/dados.service';
 import { CategorizarComponent } from './pages/categorizar/categorizar.component';
 import { DatasetComponent } from './pages/dataset/dataset.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -68,6 +69,7 @@ import { ReactiveFormsModule } from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     MatIconModule,
     MatToolbarModule,
