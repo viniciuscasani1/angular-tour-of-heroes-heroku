@@ -29,4 +29,9 @@ export class DadosService {
   findCategorizar(): Observable<any> {
     return this.http.get<any>(this.API_BICICLETA + '/categorizar');
   }
+
+  delete(id):Observable<any>{
+
+    return this.http.delete<any>( `${this.API_BICICLETA + '/' + id}`);
+  }
 }

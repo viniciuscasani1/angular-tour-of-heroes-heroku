@@ -49,4 +49,15 @@ export class CategorizarComponent implements OnInit {
     );
 
   }
+
+  delete(id){
+    this.service.delete(id).subscribe(
+      () => {
+          let index: number = this.dados.findIndex(item => item.idTweet === id);
+          console.log(this.dados.findIndex(item => item.idTweet === id));
+          this.dados.splice(index,1);
+          this.dados = this.dados;
+      }
+    )
+  }
 }
