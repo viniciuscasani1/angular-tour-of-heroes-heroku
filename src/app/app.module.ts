@@ -53,6 +53,7 @@ import {
 } from "@angular/material";
 
 import { ReactiveFormsModule } from "@angular/forms";
+import { TimelineComponent } from './pages/timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { ReactiveFormsModule } from "@angular/forms";
     DashboardComponent,
     HeroSearchComponent,
     CategorizarComponent,
-    DatasetComponent
+    DatasetComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

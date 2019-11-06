@@ -22,6 +22,10 @@ export class DadosService {
     return this.http.get<any>(this.API_BICICLETA);
   }
 
+  findTimelines(usuario): Observable<any> {
+    return this.http.get<any>(this.API_BICICLETA + '/return/timeline/' + usuario);
+  }
+
   findCategorizar(): Observable<any> {
     return this.http.get<any>(this.API_BICICLETA + '/categorizar');
   }

@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { DatasetComponent } from './pages/dataset/dataset.component';
 import { CategorizarComponent } from './pages/categorizar/categorizar.component';
+import { TimelineComponent } from './pages/timeline/timeline.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,11 @@ const routes: Routes = [
   }, {
     path: "categorizar",
     component: CategorizarComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: "timelines",
+    component: TimelineComponent,
     pathMatch: 'full'
   },
   { path: "", redirectTo: "/dataset", pathMatch: "full" }
