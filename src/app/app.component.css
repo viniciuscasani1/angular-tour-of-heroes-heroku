@@ -27,3 +27,7 @@ h1 {
   nav a.active {
     color: #039be5;
   }
+
+  .menu-tcc{
+    margin-right: 20px;
+  }

@@ -9,17 +9,19 @@
 
   <!-- Name Column -->
   <ng-container matColumnDef="psiquico">
-    <th mat-header-cell *matHeaderCellDef>Psiquico</th>
+    <th mat-header-cell *matHeaderCellDef>Psíquico</th>
     <td mat-cell *matCellDef="let element">
-      {{ element.psiquico }}
+      <mat-icon *ngIf="element.psiquico" aria-hidden="false">check_circle</mat-icon>
+      <mat-icon *ngIf="!element.psiquico" aria-hidden="false">remove_circle</mat-icon>
     </td>
   </ng-container>
 
   <!-- Name Column -->
   <ng-container matColumnDef="fisiologico">
-    <th mat-header-cell *matHeaderCellDef>Fisiologico</th>
+    <th mat-header-cell *matHeaderCellDef>Fisiológico</th>
     <td mat-cell *matCellDef="let element">
-      {{ element.fisiologico }}
+      <mat-icon *ngIf="element.fisiologico" aria-hidden="false">check_circle</mat-icon>
+      <mat-icon *ngIf="!element.fisiologico" aria-hidden="false">remove_circle</mat-icon>
     </td>
   </ng-container>
 
@@ -27,14 +29,16 @@
   <ng-container matColumnDef="comportamental">
     <th mat-header-cell *matHeaderCellDef>Comportamental</th>
     <td mat-cell *matCellDef="let element">
-      {{ element.comportamental }}
+      <mat-icon *ngIf="element.comportamental" aria-hidden="false">check_circle</mat-icon>
+      <mat-icon *ngIf="!element.comportamental" aria-hidden="false">remove_circle</mat-icon>
     </td>
   </ng-container>
 
   <ng-container matColumnDef="validado">
     <th mat-header-cell *matHeaderCellDef>Validado Especialista</th>
     <td mat-cell *matCellDef="let element">
-      {{ element.validadoEspec }}
+      <mat-icon *ngIf="element.validadoEspec" aria-hidden="false">check_circle</mat-icon>
+      <mat-icon *ngIf="!element.validadoEspec" aria-hidden="false">remove_circle</mat-icon>
     </td>
   </ng-container>
 
